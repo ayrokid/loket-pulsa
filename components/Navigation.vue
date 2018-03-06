@@ -3,24 +3,59 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">Nuxtjs Project</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
+        <div :class="['network',online ? 'online' : 'offline']">
+          <div class="circle"></div>
         </div>
       </div>
     </nav>
   </div>
 </template>
+
+
+<script>
+  export default {
+    data () {
+      return {
+        online: true
+      }
+    },
+    mounted () {
+      if (!window.navigator) {
+        this.online = false
+        return
+      }
+      this.online = Boolean(window.navigator.onLine)
+      window.addEventListener('offline', this._toggleNetworkStatus)
+      window.addEventListener('online', this._toggleNetworkStatus)
+    },
+    methods: {
+      _toggleNetworkStatus ({ type }) {
+        this.online = type === 'online'
+      }
+    },
+    destroyed () {
+      window.removeEventListener('offline', this._toggleNetworkStatus)
+      window.removeEventListener('online', this._toggleNetworkStatus)
+    }
+  }
+</script>
+
+<style>
+  .network {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .network .circle {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: green;
+    padding: .1rem .5rem;
+    border-radius: 1rem;
+  }
+
+  .network.offline .circle {
+    background: red;
+  }
+</style>
