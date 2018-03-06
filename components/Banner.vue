@@ -16,18 +16,18 @@ export default {
   data () {
     return {
       banner: [{
-          src: 'https://dummyimage.com/800x400/206de0/ffffff'
-        }, {
-          src: 'https://dummyimage.com/800x400/206de0/ffffff'
-        }, {
-          src: 'https://dummyimage.com/800x400/206de0/ffffff'
-        }, {
-          src: 'https://dummyimage.com/800x400/206de0/ffffff'
-        }, {
-          src: 'https://dummyimage.com/800x400/206de0/ffffff'
-        }, {
-          src: 'https://dummyimage.com/800x400/206de0/ffffff'
-        }
+        src: 'https://dummyimage.com/800x100/206de0/ffffff'
+      }, {
+        src: 'https://dummyimage.com/800x100/206de0/ffffff'
+      }, {
+        src: 'https://dummyimage.com/800x100/206de0/ffffff'
+      }, {
+        src: 'https://dummyimage.com/800x100/206de0/ffffff'
+      }, {
+        src: 'https://dummyimage.com/800x100/206de0/ffffff'
+      }, {
+        src: 'https://dummyimage.com/800x100/206de0/ffffff'
+      }
       ],
       swiperOption: {
         slidesPerView: 1,

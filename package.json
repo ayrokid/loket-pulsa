@@ -8,6 +8,7 @@
     "@nuxtjs/pwa": "latest",
     "ajv": "^6.2.1",
     "node-sass": "^4.7.2",
+    "npm": "^5.7.1",
     "nuxt": "latest",
     "sass-loader": "^6.0.7",
     "vue-awesome-swiper": "^3.1.3"

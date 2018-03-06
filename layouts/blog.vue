@@ -4,25 +4,43 @@
     <Navigation/>
     <!-- Content -->
     <div class="container content">
-      <div class="row">
+      <div class="row justify-content-md-center">
         <div class="col-md-9 col-lg-9">
           <!-- Content -->
-          <Banner />
+          <!-- <Banner /> -->
           <nuxt/>
-        </div>
-        <div class="col-md-3 col-lg-3">
-          <!-- Sidebar -->
-          <div class="sidebar">
-            <h4>Title of sidebar</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, porro repudiandae. Tempora, ab nostrum dolorum temporibus maiores architecto, distinctio dolorem id modi, neque atque ipsam dicta sit eum non. Sed.</p>
-          </div>
         </div>
       </div>
     </div>
     <!-- Footer -->
     <div class="footer fixed-bottom">
-      <div class="d-inline p-2 bg-primary text-white">d-inline</div>
-<div class="d-inline p-2 bg-dark text-white">d-inline</div>
+      <div class="row text-center">
+        <div class="col">
+          <a href="#">
+            <i class="icon ion-home"></i><br>Home
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <i class="icon ion-heart"></i><br>Donasi
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <i class="icon ion-information-circled"></i><br>Info
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <i class="icon ion-bag"></i><br>History
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <i class="icon ion-person"></i><br>Profile
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>

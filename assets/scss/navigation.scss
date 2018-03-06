@@ -26,8 +26,17 @@
 
 .footer {
   border-top: 1px solid #EFEFEF;
-  padding: 10px;
   text-align: center;
   color: #ABABAB;
   background-color: #ffffff;
+  padding: 5px;
+}
+.footer .col {
+  height: 60px;
+}
+.footer .col a {
+  font-size: 15px;
+}
+.footer .col a i {
+  font-size: 25px;
 }

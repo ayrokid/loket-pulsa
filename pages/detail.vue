@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-5">
+  <div class="mt-1">
     <div class="row">
       <div class="col-12">
         <div class="card">
