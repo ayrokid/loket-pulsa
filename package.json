@@ -5,9 +5,12 @@
   "author": "ayrokid <ayrokid@gmail.com>",
   "private": true,
   "dependencies": {
+    "@nuxtjs/axios": "^5.1.1",
     "@nuxtjs/pwa": "latest",
+    "@nuxtjs/toast": "^3.0.0",
     "ajv": "^6.2.1",
     "axios": "^0.18.0",
+    "dotenv": "^5.0.1",
     "node-sass": "^4.7.2",
     "npm": "^5.7.1",
     "nuxt": "latest",

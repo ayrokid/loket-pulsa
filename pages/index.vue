@@ -10,8 +10,8 @@
       </h3>
       
       <div class="links">
-        <a href="/login" class="button--green" rel="noopener">Masuk</a>
-        <a href="/register" class="button--grey" rel="noopener">Daftar</a>
+        <a href="/auth/login" class="button--green" rel="noopener">Masuk</a>
+        <a href="/auth/register" class="button--grey" rel="noopener">Daftar</a>
       </div>
     </div>
   </section>

@@ -67,7 +67,7 @@ module.exports = {
   /*
   ** Custom Plugin
    */
-  plugins: [{ src: '~plugins/swiper.js', ssr: false }],
+  plugins: [{ src: '~plugins/swiper.js', ssr: false }, '~/plugins/axios'],
   /*
   ** Customize the progress-bar color
   */
@@ -81,7 +81,11 @@ module.exports = {
   /*
   ** Modules
   */
-  modules: ['@nuxtjs/pwa']
+  modules: ['@nuxtjs/pwa', '@nuxtjs/axios', '@nuxtjs/toast'],
+
+  toast: {
+    position: 'top-center'
+  }
 }
 
 function changeLoaderOptions (loaders) {

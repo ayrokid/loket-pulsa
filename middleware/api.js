@@ -16,7 +16,7 @@ export default {
       token = window.localStorage.getItem('token')
     }
 
-    var url = uri
+    var url = process.env.URL_API + uri
 
     axios.interceptors.response.use(undefined, err => {
       var res = err.response
@@ -28,7 +28,7 @@ export default {
           document.cookie = 'sso_token=;expires=Thu, 01 Jan 1970 00:00:00 UTC'
         }
 
-        window.location = '/login'
+        window.location.href = '/login'
       }
 
       return Promise.reject(err)
