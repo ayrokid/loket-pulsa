@@ -2,32 +2,38 @@
   <div>
     <div v-swiper:mySwiper="swiperOption">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" v-for="item in banner" v-bind:key="item.key">
+        <div v-for="item in banner" :key="item.key" class="swiper-slide" >
           <img :src="item.src" alt="item.src">
         </div>
       </div>
-      <div class="swiper-pagination"  slot="pagination"></div>
+      <div slot="pagination" class="swiper-pagination" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
-      banner: [{
-        src: 'https://dummyimage.com/800x100/206de0/ffffff'
-      }, {
-        src: 'https://dummyimage.com/800x100/206de0/ffffff'
-      }, {
-        src: 'https://dummyimage.com/800x100/206de0/ffffff'
-      }, {
-        src: 'https://dummyimage.com/800x100/206de0/ffffff'
-      }, {
-        src: 'https://dummyimage.com/800x100/206de0/ffffff'
-      }, {
-        src: 'https://dummyimage.com/800x100/206de0/ffffff'
-      }
+      banner: [
+        {
+          src: "https://dummyimage.com/800x100/206de0/ffffff"
+        },
+        {
+          src: "https://dummyimage.com/800x100/206de0/ffffff"
+        },
+        {
+          src: "https://dummyimage.com/800x100/206de0/ffffff"
+        },
+        {
+          src: "https://dummyimage.com/800x100/206de0/ffffff"
+        },
+        {
+          src: "https://dummyimage.com/800x100/206de0/ffffff"
+        },
+        {
+          src: "https://dummyimage.com/800x100/206de0/ffffff"
+        }
       ],
       swiperOption: {
         slidesPerView: 1,
@@ -54,7 +60,7 @@ export default {
           disableOnInteraction: false
         },
         pagination: {
-          el: '.swiper-pagination'
+          el: ".swiper-pagination"
         }
       }
     }

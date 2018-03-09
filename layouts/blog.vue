@@ -17,27 +17,27 @@
       <div class="row text-center">
         <div class="col">
           <a href="#">
-            <i class="icon ion-home"></i><br>Home
+            <i class="icon ion-home"/><br>Home
           </a>
         </div>
         <div class="col">
           <a href="#">
-            <i class="icon ion-heart"></i><br>Donasi
+            <i class="icon ion-heart"/><br>Donasi
           </a>
         </div>
         <div class="col">
           <a href="#">
-            <i class="icon ion-information-circled"></i><br>Info
+            <i class="icon ion-information-circled"/><br>Info
           </a>
         </div>
         <div class="col">
           <a href="#">
-            <i class="icon ion-bag"></i><br>History
+            <i class="icon ion-bag"/><br>History
           </a>
         </div>
         <div class="col">
           <a href="#">
-            <i class="icon ion-person"></i><br>Profile
+            <i class="icon ion-person"/><br>Profile
           </a>
         </div>
       </div>
@@ -46,8 +46,8 @@
 </template>
 
 <script>
-import Navigation from '~/components/Navigation.vue'
-import Banner from '~/components/Banner.vue'
+import Navigation from "~/components/Navigation.vue"
+import Banner from "~/components/Banner.vue"
 export default {
   components: {
     Navigation,
