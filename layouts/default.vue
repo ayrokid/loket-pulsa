@@ -1,5 +1,5 @@
 <template>
-  <div :style="{ backgroundImage: `url(${backgroundUrl})` }">
+  <div :style="{ backgroundImage: `url(${backgroundUrl})` }" class="bg">
     <nuxt/>
   </div>
 </template>
@@ -33,11 +33,17 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+.bg {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .button--green {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border: 1px solid #ffffff;
+  color: #ffffff;
   text-decoration: none;
   padding: 10px 30px;
 }
@@ -48,7 +54,7 @@ html {
 .button--grey {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #35495e;
+  border: 1px solid #ffffff;
   color: #ffffff;
   text-decoration: none;
   padding: 10px 30px;

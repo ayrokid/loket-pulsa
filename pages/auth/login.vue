@@ -1,9 +1,7 @@
 <template>
   <section class="container">
     <div class="content">
-      <h1 class="title">
-        NUXT
-      </h1>
+      <logo/>
       <form @submit.prevent="login">
         <div class="form-group">
           <input v-model="email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
@@ -15,21 +13,24 @@
           <input v-model="password" type="password" class="form-control" placeholder="Password">
         </div>
       
-        <button type="submit" class="btn btn-outline-primary btn-block" >Submit</button>
+        <button type="submit" class="btn btn-secondary btn-block" >Login</button>
       </form>
       <div class="mt-5 mb-3">
         Belum Punya Akun?
       </div>
-      <a class="btn btn-dark btn-block" href="/auth/register">Daftar Sekarang</a>
+      <a class="btn btn-success btn-block" href="/auth/register">Daftar Sekarang</a>
       <div class="mt-5">
-        <a class="text-secondary" href="/forgot/password" style="border-bottom: 1px solid" >Lupa Password</a>
+        <a class="text-dark" href="/forgot/password" style="border-bottom: 1px solid" >Lupa Password</a>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import Logo from "~/components/Logo.vue"
+
 export default {
+  components: { Logo },
   data() {
     return {
       email: "",
@@ -62,23 +63,6 @@ export default {
 .content {
   width: 100%;
   margin: 50px;
-}
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 60px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 20px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
 }
 
 .links {

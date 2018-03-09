@@ -1,9 +1,7 @@
 <template>
   <section class="container">
     <div class="content">
-      <h1 class="title">
-        NUXT
-      </h1>
+      <logo/>
       <form @submit.prevent="login">
         <div class="form-group">
           <input v-model="email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
@@ -12,17 +10,20 @@
           </div>
         </div>
       
-        <button type="submit" class="btn btn-outline-primary btn-block" >Daftar</button>
+        <button type="submit" class="btn btn-secondary btn-block" >Daftar</button>
       </form>
       <div class="mt-5 mb-4">
-        <a class="btn btn-outline-dark" href="/auth/login">Login Sekarang</a>
+        <a class="btn btn-success" href="/auth/login">Login Sekarang</a>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import Logo from "~/components/Logo.vue"
+
 export default {
+  components: { Logo },
   data() {
     return {
       email: "",
@@ -55,23 +56,6 @@ export default {
 .content {
   width: 100%;
   margin: 50px;
-}
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 60px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 20px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
 }
 
 .links {
