@@ -1,5 +1,9 @@
 export default function({ $axios, redirect }) {
-  // $axios.setToken('123', 'Bearer')
+  /*   if (window.localStorage.getItem("userToken")) {
+    const token = window.localStorage.getItem("userToken")
+    $axios.setToken(token, "Bearer")
+  } */
+
   $axios.onRequest(config => {
     console.log("Making request to " + config.url)
   })

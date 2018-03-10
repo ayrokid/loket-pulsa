@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   /*
   ** Build configuration
@@ -85,6 +87,14 @@ module.exports = {
 
   toast: {
     position: "top-center"
+  },
+
+  env: {
+    baseUrl: process.env.URL_API,
+    app_name: "Zakat Kasih"
+  },
+  router: {
+    //middleware: "api"
   }
 }
 

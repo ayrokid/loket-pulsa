@@ -11,6 +11,7 @@
     "ajv": "^6.2.1",
     "axios": "^0.18.0",
     "dotenv": "^5.0.1",
+    "ionicons": "^3.0.0",
     "node-sass": "^4.7.2",
     "npm": "^5.7.1",
     "nuxt": "latest",

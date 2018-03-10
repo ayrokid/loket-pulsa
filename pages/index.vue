@@ -32,6 +32,7 @@ export default {
       this.online = false
       return
     }
+    console.log("data", process.env.baseUrl)
     this.online = Boolean(window.navigator.onLine)
     window.addEventListener("offline", this._toggleNetworkStatus)
     window.addEventListener("online", this._toggleNetworkStatus)

@@ -2,9 +2,19 @@
   <div>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">Nuxtjs Project</a>
-        <div :class="['network',online ? 'online' : 'offline']">
-          <div class="circle"/>
+        <a class="navbar-brand" href="#">
+          <img :src="logo" width="30" height="30" class="d-inline-block align-top" alt="">
+          {{ app }}
+        </a>
+        <div>
+          <div :class="['network',online ? 'online' : 'offline']" class="float-left" >
+            <div class="circle"/>
+          </div>
+          <div class="float-right">
+            <a class="btn btn-sm nav-logout" href="#">
+              <i class="icon ion-log-out"/>
+            </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -13,10 +23,16 @@
 
 
 <script>
+import logo from "~/static/logo.png"
 export default {
+  components: {
+    logo
+  },
   data() {
     return {
-      online: true
+      online: true,
+      logo,
+      app: process.env.app_name
     }
   },
   mounted() {
@@ -44,6 +60,8 @@ export default {
 .network {
   font-weight: 400;
   font-size: 1rem;
+  width: 30px;
+  margin-top: 13px;
 }
 
 .network .circle {
@@ -57,5 +75,8 @@ export default {
 
 .network.offline .circle {
   background: red;
+}
+.nav-logout i {
+  font-size: 25px;
 }
 </style>

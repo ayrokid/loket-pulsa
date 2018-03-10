@@ -42,11 +42,29 @@ export default {
   mounted() {},
   methods: {
     async login() {
-      // const { email, password } = this
-      // const data = await this.$axios.$post('https://api-sm.s45.in/me/login', {email, password})
-      // this.ip = data
-      // console.log(this.ip)
-      this.$toast.success("Logging in...").goAway(1500)
+      try {
+        const { email, password } = this
+        const data = await this.$axios.$post(process.env.baseUrl + "login", {
+          email,
+          password
+        })
+
+        if (typeof data.access_token !== "undefined") {
+          if (window.localStorage) {
+            window.localStorage.setItem("userToken", data.access_token)
+            window.localStorage.setItem("data", JSON.stringify(data))
+            this.$store.commit("SET_USER", JSON.stringify(data))
+          }
+          console.log(data)
+          this.$toast.success("login berhasil!").goAway(1500)
+          this.$router.replace("/home")
+        } else {
+          this.$toast.error("login gagal!").goAway(1500)
+        }
+      } catch (error) {
+        console.log(Object.keys(error), error.response)
+        this.$toast.error(error.response.statusText).goAway(2000)
+      }
     }
   }
 }
