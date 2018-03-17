@@ -57,7 +57,13 @@
   height: 60px;
 }
 .footer .col a {
+  color: #393939;
   font-size: 15px;
+}
+.footer .col a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: dodgerblue;
 }
 .footer .col a i {
   font-size: 25px;

@@ -5,7 +5,7 @@
         <div class="bs-glyphicons">
           <ul class="bs-glyphicons-list">
             <li>
-              <a href="/beli/pulsa">
+              <a href="/menu/pulsa">
                 <i class="fa fa-mobile" aria-hidden="true"/>
                 <span class="glyphicon-class">Pulsa Reguler</span>
               </a>
@@ -68,6 +68,57 @@
         </div>
       </div>
     </div>
+
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="bs-glyphicons">
+          <ul class="bs-glyphicons-list">
+            <li>
+              <a href="/menu/pulsa">
+                <i class="fa fa-mobile" aria-hidden="true"/>
+                <span class="glyphicon-class">Transfer Member</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-heart" aria-hidden="true"/>
+                <span class="glyphicon-class">Donasi</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-handshake-o" aria-hidden="true"/>
+                <span class="glyphicon-class">Downline</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-users" aria-hidden="true"/>
+                <span class="glyphicon-class">Member</span>
+              </a>
+            </li> 
+            <li>
+              <a href="">
+                <i class="fa fa-money" aria-hidden="true"/>
+                <span class="glyphicon-class">Bonus</span>
+              </a>
+            </li> 
+            <li>
+              <a href="">
+                <i class="fa fa-info" aria-hidden="true"/>
+                <span class="glyphicon-class">Informasi</span>
+              </a>
+            </li> 
+            <li>
+              <a href="">
+                <i class="fa fa-question" aria-hidden="true"/>
+                <span class="glyphicon-class">Bantuan CS</span>
+              </a>
+            </li>                  
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -84,90 +135,3 @@ export default {
   methods: {}
 }
 </script>
-
-<style scoped>
-@media (min-width: 768px) {
-  .bs-glyphicons {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-
-.bs-glyphicons {
-  margin: 0 0px 20px;
-}
-
-.bs-glyphicons-list {
-  padding-left: 0;
-  list-style: none;
-}
-
-.bs-glyphicons li {
-  float: left;
-  width: 25%;
-  height: 115px;
-  padding: 10px;
-  font-size: 14px;
-  line-height: 1.4;
-  text-align: center;
-  background-color: #3897d1;
-  border: 2px solid #f6f8fa;
-}
-
-.bs-glyphicons li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.bs-glyphicons li i {
-  font-size: 50px;
-  margin-bottom: 15px;
-}
-
-@media (max-width: 767px) {
-  .bs-glyphicons li {
-    width: 33%;
-  }
-
-  .bs-glyphicons li {
-    font-size: 12px;
-  }
-}
-
-.bs-glyphicons li:hover {
-  background-color: #ffffff;
-  border: 2px solid #3897d1;
-}
-
-.bs-glyphicons li:hover a {
-  color: #3897d1 !important;
-}
-
-.bs-glyphicons li a:hover {
-  color: #3897d1 !important;
-}
-
-.bs-glyphicons .glyphicon {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-size: 30px;
-}
-
-.glyphicon {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: "Glyphicons Halflings";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.bs-glyphicons .glyphicon-class {
-  display: block;
-  text-align: center;
-  word-wrap: break-word;
-}
-</style>

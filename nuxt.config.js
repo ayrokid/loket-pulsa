@@ -69,7 +69,10 @@ module.exports = {
     ]
   },
 
-  css: [{ src: "~/assets/scss/navigation.scss", lang: "scss" }],
+  css: [
+    { src: "~/assets/scss/navigation.scss", lang: "scss" },
+    { src: "~/assets/scss/app.scss", lang: "scss" }
+  ],
   /*
   ** Custom Plugin
    */

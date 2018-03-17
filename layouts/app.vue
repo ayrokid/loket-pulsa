@@ -16,8 +16,8 @@
     <div class="footer fixed-bottom">
       <div class="row text-center">
         <div class="col">
-          <a href="/beli">
-            <i class="icon ion-ios-cart"/><br>Beli
+          <a href="/menu">
+            <i class="icon ion-ios-grid-view"/><br>Menu
           </a>
         </div>
         <div class="col">
@@ -36,8 +36,8 @@
           </a>
         </div>
         <div class="col">
-          <a href="/setting">
-            <i class="icon ion-ios-gear"/><br>Setting
+          <a href="/profile">
+            <i class="icon ion-ios-person"/><br>profile
           </a>
         </div>
       </div>
