@@ -3,10 +3,10 @@
     <div>
       <logo/>
       <h1 class="title">
-        NUXT
+        Loket Pulsa
       </h1>
       <h3 class="subtitle">
-        PWA Vue.js Application
+        Agen pulsa murah all operator
       </h3>
       
       <div class="links">
@@ -63,38 +63,18 @@ export default {
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
-  font-size: 60px;
+  font-size: 40px;
   color: #ffffff;
   letter-spacing: 1px;
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
   color: #ffffff;
-  word-spacing: 5px;
   padding-bottom: 15px;
 }
 
 .links {
   padding-top: 15px;
-}
-
-.network {
-  font-weight: 400;
-  font-size: 1rem;
-}
-
-.network .circle {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  background: green;
-  padding: 0.1rem 0.5rem;
-  border-radius: 1rem;
-}
-
-.network.offline .circle {
-  background: red;
 }
 </style>

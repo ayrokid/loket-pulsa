@@ -33,17 +33,21 @@ module.exports = {
   ** Common headers are already provided by @nuxtjs/pwa preset
   */
   head: {
-    title: "example",
+    title: "Loket Pulsa",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "Nuxt.js project" },
 
       // example vue-meta
-      { hid: "title", name: "title", content: "Nuxt.js project" }
+      {
+        hid: "title",
+        name: "title",
+        content: "Agen pulsa all operator indonesia"
+      }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/icon.png" },
+      { rel: "icon", type: "image/x-icon", href: "~static/lo-xs.png" },
       {
         rel: "stylesheet",
         type: "text/css",
@@ -83,7 +87,12 @@ module.exports = {
   /*
   ** Modules
   */
-  modules: ["@nuxtjs/pwa", "@nuxtjs/axios", "@nuxtjs/toast"],
+  modules: [
+    "@nuxtjs/pwa",
+    "@nuxtjs/axios",
+    "@nuxtjs/toast",
+    "@nuxtjs/font-awesome"
+  ],
 
   toast: {
     position: "top-center"
@@ -91,7 +100,7 @@ module.exports = {
 
   env: {
     baseUrl: process.env.URL_API,
-    app_name: "Zakat Kasih"
+    app_name: "Loket Pulsa"
   },
   router: {
     //middleware: "api"

@@ -12,10 +12,10 @@
           </div>
         </div>
       
-        <button type="submit" class="btn btn-outline-primary btn-block" >Kirim Permintaan</button>
+        <button type="submit" class="btn btn-secondary btn-block" >Kirim Permintaan</button>
       </form>
       <div class="mt-5 mb-4">
-        <a class="btn btn-outline-dark" href="/auth/login">Login Sekarang</a>
+        <a class="btn btn-outline-light" href="/auth/login">Login Sekarang</a>
       </div>
     </div>
   </section>

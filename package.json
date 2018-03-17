@@ -6,6 +6,7 @@
   "private": true,
   "dependencies": {
     "@nuxtjs/axios": "^5.1.1",
+    "@nuxtjs/font-awesome": "^1.0.3",
     "@nuxtjs/pwa": "^2.0.8",
     "@nuxtjs/toast": "^3.0.0",
     "ajv": "^6.2.1",

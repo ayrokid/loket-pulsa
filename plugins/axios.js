@@ -3,6 +3,7 @@ export default function({ $axios, redirect }) {
     const token = window.localStorage.getItem("userToken")
     $axios.setToken(token, "Bearer")
   } */
+  $axios.baseURL = "http://api.zakatkasih.org/v1/"
 
   $axios.onRequest(config => {
     console.log("Making request to " + config.url)

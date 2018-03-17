@@ -16,28 +16,28 @@
     <div class="footer fixed-bottom">
       <div class="row text-center">
         <div class="col">
-          <a href="#">
-            <i class="icon ion-home"/><br>Home
+          <a href="/beli">
+            <i class="icon ion-ios-cart"/><br>Beli
           </a>
         </div>
         <div class="col">
-          <a href="#">
-            <i class="icon ion-heart"/><br>Donasi
+          <a href="/topup">
+            <i class="icon ion-ios-speedometer"/><br>Top Up
           </a>
         </div>
         <div class="col">
-          <a href="#">
-            <i class="icon ion-information-circled"/><br>Info
+          <a href="/harga">
+            <i class="icon ion-information-circled"/><br>Harga
           </a>
         </div>
         <div class="col">
-          <a href="#">
-            <i class="icon ion-bag"/><br>History
+          <a href="/history">
+            <i class="icon ion-ios-clock"/><br>History
           </a>
         </div>
         <div class="col">
-          <a href="#">
-            <i class="icon ion-person"/><br>Profile
+          <a href="/setting">
+            <i class="icon ion-ios-gear"/><br>Setting
           </a>
         </div>
       </div>

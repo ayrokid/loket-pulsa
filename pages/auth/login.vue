@@ -20,7 +20,7 @@
       </div>
       <a class="btn btn-success btn-block" href="/auth/register">Daftar Sekarang</a>
       <div class="mt-5">
-        <a class="text-dark" href="/forgot/password" style="border-bottom: 1px solid" >Lupa Password</a>
+        <a class="text-light" href="/forgot/password" style="border-bottom: 1px solid" >Lupa Password</a>
       </div>
     </div>
   </section>
@@ -57,7 +57,7 @@ export default {
           }
           console.log(data)
           this.$toast.success("login berhasil!").goAway(1500)
-          this.$router.replace("/home")
+          this.$router.replace("/beli")
         } else {
           this.$toast.error("login gagal!").goAway(1500)
         }

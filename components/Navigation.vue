@@ -11,7 +11,7 @@
             <div class="circle"/>
           </div>
           <div class="float-right">
-            <a class="btn btn-sm nav-logout" href="#">
+            <a class="btn btn-sm nav-logout" href="#" @click="logout" >
               <i class="icon ion-log-out"/>
             </a>
           </div>
@@ -23,7 +23,7 @@
 
 
 <script>
-import logo from "~/static/logo.png"
+import logo from "~/static/lo-xs.png"
 export default {
   components: {
     logo
@@ -51,6 +51,27 @@ export default {
   methods: {
     _toggleNetworkStatus({ type }) {
       this.online = type === "online"
+    },
+    async logout() {
+      try {
+        const data = await this.$axios.$post(process.env.baseUrl + "logout")
+
+        if (typeof data.access_token !== "undefined") {
+          if (window.localStorage) {
+            window.localStorage.setItem("userToken", null)
+            window.localStorage.setItem("data", null)
+            this.$store.commit("SET_USER", null)
+          }
+          console.log(data)
+          this.$toast.success("logout berhasil!").goAway(1500)
+          this.$router.replace("/")
+        } else {
+          this.$toast.error("logout gagal!").goAway(1500)
+        }
+      } catch (error) {
+        console.log(Object.keys(error), error.response)
+        this.$toast.error(error.response.statusText).goAway(2000)
+      }
     }
   }
 }

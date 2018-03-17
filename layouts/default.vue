@@ -1,5 +1,6 @@
 <template>
-  <div :style="{ backgroundImage: `url(${backgroundUrl})` }" class="bg">
+  <!-- <div :style="{ backgroundImage: `url(${backgroundUrl})` }" class="bg"> -->
+  <div class="bg">
     <nuxt/>
   </div>
 </template>
@@ -19,9 +20,6 @@ html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
@@ -38,6 +36,17 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .button--green {
   display: inline-block;

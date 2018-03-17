@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  layout: "blog",
+  layout: "app",
   // middleware: "authenticated",
   data() {
     return {

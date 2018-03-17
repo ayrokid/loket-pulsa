@@ -1,6 +1,8 @@
 <template>
   <div>
-    <img src="~/static/sociomile.png" alt="logo sociomile">
+    <a href="/">
+      <img src="~/static/lo-small.png" alt="logo">
+    </a>
   </div>
 </template>
 
