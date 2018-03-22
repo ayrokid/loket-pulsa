@@ -57,7 +57,7 @@ export default {
           }
           console.log(data)
           this.$toast.success("login berhasil!").goAway(1500)
-          this.$router.replace("/beli")
+          this.$router.replace("/menu")
         } else {
           this.$toast.error("login gagal!").goAway(1500)
         }

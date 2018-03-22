@@ -5,12 +5,9 @@
   </div>
 </template>
 <script>
-import backgroundUrl from "~/assets/blue.png"
 export default {
   data() {
-    return {
-      backgroundUrl
-    }
+    return {}
   }
 }
 </script>
