@@ -51,9 +51,7 @@ $ npm run generate
 
 ## License
 
-```
 [Aladdin Free Public License](https://en.wikipedia.org/wiki/Aladdin_Free_Public_License)
-```
 
 ## Donation
 
