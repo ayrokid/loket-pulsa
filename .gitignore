@@ -24,3 +24,6 @@ static/workbox-sw*.js
 
 # env
 .env
+
+# PWA
+sw.*
